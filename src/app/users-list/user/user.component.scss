@@ -1,0 +1,53 @@
+.userCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  margin: 10px 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 3px 13px 3px rgba(94, 88, 88, 0.51);
+  padding: 5px;
+}
+
+.userCard:hover {
+  background-color: #7C98A9;
+  transition: 300ms;
+}
+
+.userCard:active {
+  box-shadow: inset 1px -1px 13px 3px rgb(94 88 88 / 51%);
+  transition: 200ms;
+}
+
+.userImage {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 2px 4px 10px 2px rgb(94 88 88 / 51%);
+}
+
+.userMainInfo {
+  margin: auto;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.userSecInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  // margin-left: 30%;
+  gap: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 23px;
+  margin: 0;
+  padding: 0;
+  margin-right: 2px;
+}

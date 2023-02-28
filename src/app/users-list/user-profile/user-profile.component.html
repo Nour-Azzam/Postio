@@ -1,0 +1,82 @@
+
+<div *ngIf="user | async as user_; else loading">
+  <div class="mainUserProfile">
+    <div class="mainInfo">
+      <div class="nameAndImage">
+        <div class="imageContainer">
+          <img src="{{ user_.image }}" class="userImage" />
+        </div>
+        {{ user_.firstName }} {{ user_.lastName }}
+      </div>
+      <div class="basicInfo">
+        <div class="d-flex align-items-center oneInfo">
+          <img src="../../../assets/age.png" class="icon" /> Age:
+          {{ user_.age }}
+        </div>
+        <div class="d-flex align-items-center oneInfo">
+          <img src="../../../assets/gender2.png" class="icon" /> Gender:
+          {{ user_.gender }}
+        </div>
+        <div class="d-flex align-items-center oneInfo">
+          <img src="../../../assets/email.png" class="icon" /> Email:
+          {{ user_.email }}
+        </div>
+        <div class="d-flex align-items-center oneInfo">
+          <img src="../../../assets/phone.png" class="icon" /> Phone Number:
+          {{ user_.phone }}
+        </div>
+      </div>
+    </div>
+    <div class="verticalLine"></div>
+    <div class="secInfo">
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/calender.png" class="icon" /> Date of birth:
+        {{ user_.birthDate }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/blood.png" class="icon" /> Blood group:
+        {{ user_.bloodGroup }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/height.png" class="icon" /> Height:
+        {{ user_.height }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/weight.png" class="icon" /> Weight:
+        {{ user_.weight }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/eye.png" class="icon" /> Eye color:
+        {{ user_.eyeColor }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/hairColor.png" class="icon" /> Hair color:
+        {{ user_.hair.color }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/hairType.png" class="icon" /> Hair type:
+        {{ user_.hair.type }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/adderessAddress.png" class="icon" /> Address:
+        {{ user_.address.address }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/addressCity.png" class="icon" /> City:
+        {{ user_.address.city }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/Addresspostalcode.png" class="icon" />
+        Postalcode:
+        {{ user_.address.postalCode }}
+      </div>
+      <div class="d-flex align-items-center oneInfo">
+        <img src="../../../assets/addressState.png" class="icon" /> State:
+        {{ user_.address.state }}
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #loading>
+    <span class="loader"></span>
+</ng-template>

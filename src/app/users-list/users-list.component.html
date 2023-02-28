@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="main" *ngIf="usersList$ | async as users; else loading">
+    <div *ngFor="let user of users" class="appuser">
+      <app-user [user]="user" [routerLink]="'/userslist/userprofile/'+ user.id"></app-user>
+    </div>
+  </div>
+  <ng-template #loading>
+    <span class="loader"></span>
+  </ng-template>
+</div>

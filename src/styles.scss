@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+
+
+.darkMode{
+  color: white !important;
+  background-color: #1c262d !important; 
+
+}
+
+body.darkMode{
+  background-color: #1c262d !important; 
+
+}
+.darkMode .themeChoiceContainer {
+  background-color: #1c262d !important; 
+}
+
+.darkMode .main {
+  background-color: #1c262d !important; 
+}
+
+.darkMode .verticalLine {
+  box-shadow: 3px 3px 3px 1px rgb(0 0 0 / 51%) !important;
+}
+
+
+.darkMode .loader{
+  border: 5px solid white !important;
+  border-bottom-color: transparent !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+  box-sizing: border-box !important;
+  animation: rotation 1s linear infinite !important;
+}
+
+
+.darkMode .sidebar {
+  color: white !important;
+  background-color: #12191d !important;
+  box-shadow: 4px 2px 6px 2px rgb(0 0 0 / 29%) !important;
+}
+
+.darkMode .my-card {
+  background-color: #3e515e52 !important;
+  box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 51%) !important;
+}
+
+.darkMode .userCard {
+  background-color: #3e515e52 !important;
+  box-shadow: 3px 3px 5px 3px rgb(0 0 0 / 51%) !important;
+}
+
+.darkMode .userCard:hover {
+  background-color: #12191d !important;
+  transition: 200ms;
+}
+
+
+.darkMode .tagPill {
+  background-color: #1c262d79 !important;
+  box-shadow: 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
+}
+
+.darkMode .tagPill:hover {
+  background-color: #12191d !important;
+}
+
+.darkMode .reactions {
+  background-color: #1c262d79 !important;
+  box-shadow: 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
+}
+
+.darkMode .showComments {
+  background-color: #12191d !important;
+  box-shadow: 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
+}
+
+.darkMode .showComments:active {
+  background-color: #12191d !important;
+  box-shadow: inset 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
+}
+
+
+.darkMode .userImage {
+  box-shadow: 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
+}
+
+.darkMode .commenterImage {
+  box-shadow: 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
+}
+
+.darkMode .theButton {
+  background-color: #12191d !important;
+  box-shadow: 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
+}
+
+.darkMode .theButton:active {
+  background-color: #12191d !important;
+  box-shadow: inset 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

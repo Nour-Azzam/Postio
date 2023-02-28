@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="main">
+    <div *ngIf="posts$ | async as posts_; else loading">
+      <div *ngFor="let post of posts_">
+        <app-post [post]="post"> </app-post>
+      </div>
+    </div>
+    <ng-template #loading>
+      <span class="loader"></span>
+
+    </ng-template>
+
+    <div class="nextButtons">
+      <button
+        class="theButton"
+        (click)="showPrevPosts()"
+        [disabled]="counter === 0"
+        [ngClass]="{ disabled: counter === 0 }"
+      >
+        &lt; &lt; Show previous posts
+      </button>
+      <button
+        class="theButton"
+        (click)="showNextPosts()"
+        [disabled]="counter === 150"
+        [ngClass]="{ disabled: counter === 150 }"
+      >
+        Show next posts &gt; &gt;
+      </button>
+    </div>
+  </div>
+</div>

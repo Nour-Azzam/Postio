@@ -1,0 +1,153 @@
+.my-card {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #F4F4F4;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 13px 3px rgba(94, 88, 88, 0.51);
+  }
+
+  .userInfo {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    // margin-bottom: 20px;
+  }
+  
+  .userImage {
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 5px 2px rgb(94 88 88 / 36%);
+  }
+
+  
+  .username {
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .username:hover{
+    color: #404c58;
+    transition: 200ms;
+  }
+
+  
+  .tags {
+    margin-left: 12%;
+    margin-top: -5%;
+  }
+  
+  .postInfo {
+    // background-color: white;
+    padding: 5px;
+    margin-top: 20px;
+  }
+  
+  .tagPill {
+    // background-color: #fe5f55;
+    background-color: #e5e5f3;
+    margin: 5px 2px;
+    border-radius: 10px;
+    padding: 0.2rem;
+    font-size: 10px;
+    // align-items: center;
+    text-align: center;
+    box-shadow: 1px 2px 4px 2px rgb(94 88 88 / 28%)
+  
+  }
+  
+  .tagPill:hover {
+    background-color: #7C98A9;
+    cursor: pointer;
+    transition: 300ms;
+  }
+  
+  .showComments {
+    padding: 5px;
+    margin: 4px 35%;
+    width: 30%;
+    border: none;
+    background-color: #0072E9;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 2px 4px 10px 2px rgb(94 88 88 / 51%);
+    height: 7%;
+    cursor: pointer;
+  }
+  
+  .showComments:active {
+    box-shadow: inset 1px -1px 13px 3px rgb(94 88 88 / 51%);
+    transition: 200ms;
+  }
+  
+  .reactions{
+    font-size: 12px;
+    background: #E5E5F3;
+    width: 15%;
+    margin-top: 5px;
+    box-shadow: 1px 2px 4px 2px rgb(94 88 88 / 28%);
+    border-radius: 2px;
+    text-align: center;
+  
+  }
+
+  .comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 7px;
+    font-size: 15px;
+    padding: 2px;
+    margin-top: 5px;
+  }
+
+  .commenterInfo{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    padding: 1px;
+    margin-top: -4px;
+    margin-left: -1px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .commenterInfo:hover{
+    color: #404c58;
+    transition: 200ms;
+  }
+
+
+  .commenterImage{
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 10px 2px rgb(94 88 88 / 51%);
+  }
+
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #495867;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 45%;
+    margin-right: 45%;
+    animation: rotation 1s linear infinite;
+
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 

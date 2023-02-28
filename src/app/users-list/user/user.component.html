@@ -1,0 +1,25 @@
+<div class="userCard">
+  <img src="{{ user?.image }}" alt="" class="userImage" />
+  <div class="userMainInfo">
+    {{ user?.firstName }}
+    {{ user?.maidenName }}
+    {{ user?.lastName }}
+  </div>
+  <div class="userSecInfo">
+    <div class="d-flex align-items-center">
+      <img src="../../../assets/age.png" class="icon" /> Age: {{ user?.age }}
+    </div>
+    <div class="d-flex align-items-center">
+      <img src="../../../assets/gender2.png" class="icon" /> Gender:
+      {{ user?.gender }}
+    </div>
+    <div class="d-flex align-items-center">
+      <img src="../../../assets/email.png" class="icon" /> Email:
+      {{ user?.email }}
+    </div>
+    <div class="d-flex align-items-center">
+      <img src="../../../assets/phone.png" class="icon" /> Phone Number:
+      {{ user?.phone }}
+    </div>
+  </div>
+</div>

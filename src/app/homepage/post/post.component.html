@@ -1,0 +1,61 @@
+<div class="my-card" *ngIf="post">
+  <div class="userInfo">
+    <div class="userImageContainer">
+      <img
+        src="{{ (getUserById(post.userId) | async)?.image }}"
+        alt=""
+        class="userImage"
+      />
+    </div>
+    <div class="username" [routerLink]="'/userslist/userprofile/'+post.userId">
+      {{ (getUserById(post.userId) | async)?.firstName }}
+      {{ (getUserById(post.userId) | async)?.lastName }}
+    </div>
+  </div>
+  <div class="tags">
+    <span class="tagPill" *ngFor="let tag of post.tags">
+      {{ tag }}
+    </span>
+  </div>
+  <div class="postInfo">
+    {{ post.body }}
+    <div class="reactions">Reactions: {{ post.reactions }}</div>
+  </div>
+  <button
+    class="btn showComments"
+    (click)="showingComments = true"
+    *ngIf="!showingComments"
+  >
+    Show Comments
+  </button>
+  <div class="comments" *ngIf="showingComments">
+    <div *ngIf="showComments(post.id) | async as comments_; else loading">
+      <div *ngFor="let comment of comments_" class="comment">
+        <div class="commenterInfo" [routerLink]="'/userslist/userprofile/'+ comment.user.id">
+          <img
+            src="{{ (getUserById(comment.user.id) | async)?.image }}"
+            class="commenterImage"
+          />
+          {{ (getUserById(comment.user.id) | async)?.firstName }}
+          {{ (getUserById(comment.user.id) | async)?.lastName }}
+        </div>
+
+        <div class="commentBody">
+          {{ comment.body }}
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <ng-template #loading>
+      <span class="loader"></span>
+    </ng-template>
+  </div>
+  <button
+    class="btn showComments"
+    (click)="showingComments = false"
+    *ngIf="showingComments"
+  >
+    Hide Comments
+  </button>
+</div>
