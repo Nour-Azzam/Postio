@@ -1,7 +1,7 @@
-<div [ngClass]="{'darkMode' : !lightThemed}">
-  <app-sidebar></app-sidebar>
+<div [ngClass]="{ darkMode: !lightThemed }">
+  <app-sidebar class="sidebar"></app-sidebar>
   <div
-  class="themeChoiceContainer"
+    class="themeChoiceContainer"
     style="
       margin-left: 20%;
       width: 80%;
@@ -10,19 +10,22 @@
       min-height: 100%;
       margin-left: 20%;
       background-color: white;
+      color: #12191d;
     "
   >
-  
-  <span class="themeChoice">
-    <img src="../assets/sun.png" class="themeIcon">
-    <label class="switch">
-      <input type="checkbox" [checked]="!lightThemed" (change)="lightThemed = !lightThemed">
-      <span class="slider round"></span>
-    </label> 
-    <img src="../assets/moon.png" class="themeIcon">
-  </span>
+    <span class="themeChoice">
+      <img src="../assets/sun.png" class="themeIcon" />
+      <label class="switch">
+        <input
+          type="checkbox"
+          [checked]="!lightThemed"
+          (change)="lightThemed = !lightThemed"
+        />
+        <span class="slider round"></span>
+      </label>
+      <img src="../assets/moon.png" class="themeIcon" />
+    </span>
 
     <router-outlet></router-outlet>
   </div>
-  
 </div>
