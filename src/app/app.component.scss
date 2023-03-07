@@ -76,3 +76,37 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
+
+.root-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar{
+  border-bottom: 1px solid gray;
+}
+
+.show-side-bar{
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.show-side-bar:focus{
+  outline: 1px solid black;
+}
+
+
+// screen 768px
+@media(min-width: 768px){
+  .root-container{
+    flex-direction: row;
+  }
+
+  .nav-bar{
+    display: none;
+  }
+}

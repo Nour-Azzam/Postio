@@ -1,19 +1,14 @@
-<div [ngClass]="{ darkMode: !lightThemed }">
-  <app-sidebar class="sidebar"></app-sidebar>
-  <div
-    class="themeChoiceContainer"
-    style="
-      margin-left: 20%;
-      width: 80%;
-      margin: 0;
-      display: block;
-      min-height: 100%;
-      margin-left: 20%;
-      background-color: white;
-      color: #12191d;
-    "
-  >
-    <span class="themeChoice">
+<div [ngClass]="{ darkMode: !lightThemed }" class="root-container">
+  <div class="nav-bar">
+    <button class="show-side-bar" (click)="showSideBar = !showSideBar">
+      <span class="button-icon material-icons">menu</span>
+    </button>
+  </div>
+
+  <app-sidebar class="sidebar" [class.visible]="showSideBar"></app-sidebar>
+  
+  <div class="content">
+    <!-- <span class="themeChoice">
       <img src="assets/sun.png" class="themeIcon" />
       <label class="switch">
         <input
@@ -24,8 +19,7 @@
         <span class="slider round"></span>
       </label>
       <img src="assets/moon.png" class="themeIcon" />
-    </span>
-
+    </span> -->
     <router-outlet></router-outlet>
   </div>
 </div>

@@ -8,6 +8,7 @@ import { Component, OnInit, Output } from '@angular/core';
 export class AppComponent  {
   title = 'platform';
   @Output() lightThemed = true;
+  showSideBar = false;
 
   constructor() {}
 
