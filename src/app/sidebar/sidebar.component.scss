@@ -1,11 +1,26 @@
-.sidebar {
+
+:host{
+  display: block;
   position: fixed;
-  overflow-x: hidden;
-  width: 20%;
-  height: 100vw;
+  bottom: 0;
+  top: 24px;
+  left: -100%;
+  transition: left 500ms;
+  min-width: 80vw;
+  min-height: 100vh;
+  z-index: 9999;
+}
+
+:host.visible{
+  left: 0;
+}
+
+
+.sidebar {
+  overflow: auto;
+  height: 100%;
+  min-height: 100%;
   background-color: #E6E6E6;
-  // border-right: 1px solid #26363E;
-  margin: 0;
   box-shadow: 1px 2px 3px 2px #5e585820;
 }
 
@@ -22,9 +37,23 @@
   color: #12191D;
   // text-underline-offset: 1;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
+.anchorLink.active{
+  color: #7c87a9ee;
+}
 a:hover {
   color: #7c98a9;
   transition: 200ms;
+}
+
+// min width 768
+@media(min-width: 768px){
+  :host{
+    display: block;
+    position: static;
+    min-width: 25%;
+  }
 }
