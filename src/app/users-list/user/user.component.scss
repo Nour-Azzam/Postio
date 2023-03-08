@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   border-radius: 10px;
-  margin: 10px 20px;
+  margin: 10px auto;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   box-shadow: 1px 2px 3px 3px #5e585820;
   padding: 5px;
 }
 
 .userCard:hover {
-  background-color: #7C98A9;
+  background-color: #7c98a9;
   transition: 300ms;
 }
 
@@ -33,6 +33,7 @@
   margin: auto;
   font-size: 25px;
   font-weight: 600;
+  text-align: center;
 }
 
 .userSecInfo {

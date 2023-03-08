@@ -27,13 +27,15 @@ body {
   background-color: #1c262d !important;
 }
 
-.darkMode .show-side-bar{
+.darkMode .show-side-bar {
   background-color: #1c262d !important;
 }
 
+.darkMode .sidebar-and-content {
+  background-color: #1c262d !important;
+}
 
-
-.darkMode .nav-bar{
+.darkMode .nav-bar {
   color: grey;
   background-color: #1c262d !important;
 }
@@ -42,7 +44,7 @@ body {
   color: white !important;
 }
 
-.darkMode .anchorLink:hover{
+.darkMode .anchorLink:hover {
   color: #fff23a93 !important;
 }
 
@@ -144,6 +146,6 @@ body.darkMode {
   box-shadow: inset 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
 }
 
-.darkMode{
+.darkMode {
   color: white !important;
 }

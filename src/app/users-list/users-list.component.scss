@@ -1,24 +1,22 @@
 .container {
   width: 100%;
-  // display: flex;
-  // justify-content: flex-start;
-  // flex-direction: column;
   padding: 0;
   margin: 0;
   min-width: 100%;
   min-height: 100vw;
-  // flex-wrap: wrap;
 }
 
 .main {
+  margin: 10px auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .appuser {
-  width: 40%;
-  margin: 20px 15px;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
   cursor: pointer;
 }
 
@@ -45,4 +43,16 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media(min-width: 768px){
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .appuser {
+    width: 45%;
+  }
+
 }
