@@ -108,8 +108,12 @@ input:checked + .slider:before {
   }
 
   .nav-bar {
+    position: sticky;
+    top: 0px;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
+    background-color: #f4f4f4;
   }
 
   .show-side-bar {
