@@ -45,8 +45,10 @@
             src="{{ (getUserById(comment.user.id) | async)?.image }}"
             class="commenterImage"
           />
-          {{ (getUserById(comment.user.id) | async)?.firstName }}
-          {{ (getUserById(comment.user.id) | async)?.lastName }}
+          <div class="commenterName">
+            {{ (getUserById(comment.user.id) | async)?.firstName }}
+            {{ (getUserById(comment.user.id) | async)?.lastName }}
+          </div>
         </div>
 
         <div class="commentBody">
