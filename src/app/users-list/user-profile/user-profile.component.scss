@@ -1,12 +1,13 @@
 .mainUserProfile {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   padding: 20px;
   overflow-y: hidden;
   min-height: 43.4vw;
 }
 
 .verticalLine {
+  display: none;
   margin: 10px 10px;
   border-right: 1px solid #4958677a;
   border-radius: 50%;
@@ -15,12 +16,12 @@
 }
 
 .mainInfo {
-  width: 34%;
+  width: 100%;
 }
 
 .nameAndImage {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -28,15 +29,15 @@
 .secInfo {
   width: 66%;
   padding: 50px 3px;
-  font-size: 17px;
+  font-size: 0.7rem;
   font-weight: 400;
   margin-top: 10px;
 }
 
 .userImage {
   margin: auto;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   box-shadow: 1px 2px 3px 3px #5e585820;
 }
@@ -79,4 +80,53 @@
   margin-bottom: 40vw;
   animation: rotation 1s linear infinite;
 }
+
+@media (min-width: 768px) {
+  .mainUserProfile {
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .verticalLine {
+    display: block;
+  }
+
+  .nameAndImage{
+    font-size: 20px;
+    }
+
+    .secInfo{
+      font-size: 12px;
+    }
+
+    .mainInfo {
+      width: 34%;
+    }
+
+    .userImage{
+      height: 200px;
+      width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+  .mainUserProfile {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .verticalLine {
+    display: block;
+  }
+
+  .nameAndImage{
+  font-size: 30px;
+  }
+
+  .secInfo{
+    font-size: 17px;
+  }
+}
+
 

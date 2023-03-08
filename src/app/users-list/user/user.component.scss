@@ -31,7 +31,7 @@
 
 .userMainInfo {
   margin: auto;
-  font-size: 25px;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
 }
@@ -43,6 +43,7 @@
   text-align: left;
   // margin-left: 30%;
   gap: 5px;
+  font-size: 0.8rem;
 }
 
 .icon {
@@ -51,4 +52,13 @@
   margin: 0;
   padding: 0;
   margin-right: 2px;
+}
+
+@media(min-width: 768px){
+  .userMainInfo{
+    font-size: 25px;
+  }
+  .userSecInfo{
+    font-size: 15px;
+  }
 }
