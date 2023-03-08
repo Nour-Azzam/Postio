@@ -83,6 +83,10 @@ input:checked + .slider:before {
   border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: #f4f4f4;
 }
 
 .show-side-bar {
@@ -108,12 +112,8 @@ input:checked + .slider:before {
   }
 
   .nav-bar {
-    position: sticky;
-    top: 0px;
-    width: 100%;
     display: flex;
     justify-content: flex-end;
-    background-color: #f4f4f4;
   }
 
   .show-side-bar {
