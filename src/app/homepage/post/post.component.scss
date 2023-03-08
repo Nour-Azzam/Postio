@@ -1,13 +1,15 @@
 .my-card {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
   padding: 10px;
   background-color: #e6e6e6;
-  width: 50%;
   border-radius: 10px;
   box-shadow: 1px 2px 3px 3px #5e585820;
+}
+
+@media (min-width: 768px){
+  .my-card{
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .userInfo {
@@ -18,10 +20,23 @@
   // margin-bottom: 20px;
 }
 
+.user-details{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
 .userImage {
-  height: 50px;
+  height: 40px;
   box-shadow: 1px 2px 3px 3px #5e585820;
   transition: transform 0.5s;
+}
+
+.username{
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .userImageContainer {
@@ -42,26 +57,18 @@
   border: 1px solid #0000005c;
 }
 
-.username {
-  font-weight: 600;
-  font-size: 20px;
-  cursor: pointer;
-}
 
 .username:hover {
   color: #404c58;
   transition: 200ms;
 }
 
-.tags {
-  margin-left: 12%;
-  margin-top: -5%;
-}
 
 .postInfo {
   // background-color: white;
   padding: 5px;
   margin-top: 20px;
+  font-size: .8rem;
 }
 
 .tagPill {
@@ -162,4 +169,16 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+@media(min-width: 768px){
+  .userImage{
+    height: 50px;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+  
 }

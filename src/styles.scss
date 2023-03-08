@@ -27,6 +27,17 @@ body {
   background-color: #1c262d !important;
 }
 
+.darkMode .show-side-bar{
+  background-color: #1c262d !important;
+}
+
+
+
+.darkMode .nav-bar{
+  color: grey;
+  background-color: #1c262d !important;
+}
+
 .darkMode .anchorLink {
   color: white !important;
 }
@@ -131,4 +142,8 @@ body.darkMode {
 .darkMode .theButton:active {
   background-color: #12191d !important;
   box-shadow: inset 1px 3px 4px 2px rgb(0 0 0 / 51%) !important;
+}
+
+.darkMode{
+  color: white !important;
 }

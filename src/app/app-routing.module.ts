@@ -5,7 +5,7 @@ import { UserProfileComponent } from './users-list/user-profile/user-profile.com
 import { UsersListComponent } from './users-list/users-list.component';
 
 const routes: Routes = [
-  {path: '', component: HomepageComponent},
+  {path: 'home', component: HomepageComponent, pathMatch: "full"},
   {path: 'userslist', component:UsersListComponent},
   {path: 'userslist/userprofile/:id', component:UserProfileComponent}
 ];

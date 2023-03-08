@@ -1,14 +1,13 @@
 <div [ngClass]="{ darkMode: !lightThemed }" class="root-container">
   <div class="nav-bar">
-    <button class="show-side-bar" (click)="showSideBar = !showSideBar">
+    <button
+      class="show-side-bar"
+      (click)="showSideBar = !showSideBar"
+      [ngClass]="{ darkMode: !lightThemed }"
+    >
       <span class="button-icon material-icons">menu</span>
     </button>
-  </div>
-
-  <app-sidebar class="sidebar" [class.visible]="showSideBar"></app-sidebar>
-  
-  <div class="content">
-    <!-- <span class="themeChoice">
+    <span class="themeChoice">
       <img src="assets/sun.png" class="themeIcon" />
       <label class="switch">
         <input
@@ -19,7 +18,13 @@
         <span class="slider round"></span>
       </label>
       <img src="assets/moon.png" class="themeIcon" />
-    </span> -->
-    <router-outlet></router-outlet>
+    </span>
+  </div>
+  <div class="sidebar-and-content">
+    <app-sidebar class="sidebar" [class.visible]="showSideBar"></app-sidebar>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

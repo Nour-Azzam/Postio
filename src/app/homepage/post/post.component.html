@@ -7,16 +7,22 @@
         class="userImage"
       />
     </div>
-    <div class="username" [routerLink]="'/userslist/userprofile/'+post.userId">
-      {{ (getUserById(post.userId) | async)?.firstName }}
-      {{ (getUserById(post.userId) | async)?.lastName }}
+    <div class="user-details">
+      <div
+        class="username"
+        [routerLink]="'/userslist/userprofile/' + post.userId"
+      >
+        {{ (getUserById(post.userId) | async)?.firstName }}
+        {{ (getUserById(post.userId) | async)?.lastName }}
+      </div>
+      <div class="tags">
+        <span class="tagPill" *ngFor="let tag of post.tags">
+          {{ tag }}
+        </span>
+      </div>
     </div>
   </div>
-  <div class="tags">
-    <span class="tagPill" *ngFor="let tag of post.tags">
-      {{ tag }}
-    </span>
-  </div>
+
   <div class="postInfo">
     {{ post.body }}
     <div class="reactions">Reactions: {{ post.reactions }}</div>
@@ -31,7 +37,10 @@
   <div class="comments" *ngIf="showingComments">
     <div *ngIf="showComments(post.id) | async as comments_; else loading">
       <div *ngFor="let comment of comments_" class="comment">
-        <div class="commenterInfo" [routerLink]="'/userslist/userprofile/'+ comment.user.id">
+        <div
+          class="commenterInfo"
+          [routerLink]="'/userslist/userprofile/' + comment.user.id"
+        >
           <img
             src="{{ (getUserById(comment.user.id) | async)?.image }}"
             class="commenterImage"

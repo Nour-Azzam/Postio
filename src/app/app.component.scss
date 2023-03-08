@@ -2,9 +2,6 @@
 .themeChoice {
   display: flex;
   justify-content: flex-start;
-  flex-grow: 5;
-  width: 15%;
-  margin-left: 85%;
   padding-top: 15px;
   align-items: center;
   padding: 0;
@@ -86,6 +83,8 @@ input:checked + .slider:before {
 
 .nav-bar{
   border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
 }
 
 .show-side-bar{
@@ -103,10 +102,20 @@ input:checked + .slider:before {
 // screen 768px
 @media(min-width: 768px){
   .root-container{
+    flex-direction: column;
+  }
+
+  .sidebar-and-content{
+    display: flex;
     flex-direction: row;
   }
 
-  .nav-bar{
+  .show-side-bar{
     display: none;
   }
+
+.themeChoice{
+  margin-left: 90%;
+}
+
 }
