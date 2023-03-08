@@ -5,13 +5,14 @@ import { UserProfileComponent } from './users-list/user-profile/user-profile.com
 import { UsersListComponent } from './users-list/users-list.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomepageComponent, pathMatch: "full"},
-  {path: 'userslist', component:UsersListComponent},
-  {path: 'userslist/userprofile/:id', component:UserProfileComponent}
+  { path: 'home', component: HomepageComponent, pathMatch: 'full' },
+  { path: 'userslist', component: UsersListComponent },
+  { path: 'userslist/userprofile/:id', component: UserProfileComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
