@@ -6,6 +6,11 @@
 //   min-height: 100vw;
 // }
 
+.search-icon{
+  cursor: pointer;
+}
+
+
 .main {
   margin: 10px auto;
   display: flex;
@@ -38,7 +43,7 @@
 .search-bar-container{
   display: flex;
   justify-content: center;
-  // flex-direction: column;
+  padding-top: 5px;
 }
 
 @keyframes rotation {
@@ -61,6 +66,7 @@
   }
 
   .loader {
+    
     margin-top: 20vw;
     margin-left: 40vw;
     margin-right: 40vw;

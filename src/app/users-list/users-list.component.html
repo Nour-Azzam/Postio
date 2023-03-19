@@ -1,9 +1,15 @@
 <div class="container">
+  <div class="search-bar-container">
+    <input
+      type="text"
+      class="search-bar"
+      id="searchUser"
+      name="searchUser"
+      #userSearch
+    />
+    <mat-icon (click)="onSearchUser()" class="search-icon">search</mat-icon>
+  </div>
   <div class="main" *ngIf="usersList$ | async as users; else loading">
-    <div class="search-bar-container">
-      <input type="text" class="search-bar" />
-      <mat-icon>search</mat-icon>
-    </div>
     <div *ngFor="let user of users" class="appuser">
       <app-user
         [user]="user"
