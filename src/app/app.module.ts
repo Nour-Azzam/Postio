@@ -11,6 +11,7 @@ import { UserComponent } from './users-list/user/user.component';
 import { UserProfileComponent } from './users-list/user-profile/user-profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],

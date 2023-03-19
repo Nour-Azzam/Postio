@@ -1,3 +1,5 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 /* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;
@@ -30,7 +32,7 @@ body {
   color: rgba(255, 242, 58, 0.5764705882) !important;
 }
 .darkMode .show-side-bar {
-  background-color: #1c262d !important;
+  background-color: #26363e !important;
 }
 
 .darkMode .sidebar-and-content {
@@ -155,3 +157,4 @@ body.darkMode {
 .darkMode {
   color: white !important;
 }
+

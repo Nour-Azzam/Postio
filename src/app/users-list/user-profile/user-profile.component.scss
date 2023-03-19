@@ -74,14 +74,16 @@
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  margin-top: 20vw;
-  margin-left: 40vw;
-  margin-right: 40vw;
-  margin-bottom: 40vw;
   animation: rotation 1s linear infinite;
 }
 
 @media (min-width: 768px) {
+  .loader {
+    margin-top: 20vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-bottom: 40vw;
+  }
   .mainUserProfile {
     justify-content: flex-start;
     flex-direction: row;
@@ -92,22 +94,22 @@
     display: block;
   }
 
-  .nameAndImage{
+  .nameAndImage {
     font-size: 20px;
-    }
+  }
 
-    .secInfo{
-      font-size: 12px;
-    }
+  .secInfo {
+    font-size: 12px;
+  }
 
-    .mainInfo {
-      width: 34%;
-    }
+  .mainInfo {
+    width: 34%;
+  }
 
-    .userImage{
-      height: 200px;
-      width: 200px;
-    }
+  .userImage {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -120,13 +122,11 @@
     display: block;
   }
 
-  .nameAndImage{
-  font-size: 30px;
+  .nameAndImage {
+    font-size: 30px;
   }
 
-  .secInfo{
+  .secInfo {
     font-size: 17px;
   }
 }
-
-
