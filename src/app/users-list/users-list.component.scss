@@ -10,6 +10,8 @@
   cursor: pointer;
 }
 
+
+
 .main {
   margin: 10px auto;
   display: flex;
@@ -81,5 +83,9 @@
     display: flex;
     // flex-direction: column;
     margin: 0 30%;
+  }
+
+  .container{
+    width: 74vw;
   }
 }
