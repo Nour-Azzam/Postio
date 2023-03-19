@@ -39,4 +39,11 @@ export class CacheDataService {
       .get<any>('https://dummyjson.com/posts?skip=' + counter + '&limit=4')
       .pipe(map((response) => response.posts as Post[]));
   }
+
+    searchUser(queryParam: string){
+      return this.httpClient
+      .get<any>('https://dummyjson.com/users/search?q=' + queryParam)
+      .pipe(map((response) => response.users as User[]));
+    }
+
 }
