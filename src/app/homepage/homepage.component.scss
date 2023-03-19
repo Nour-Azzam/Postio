@@ -52,18 +52,19 @@
 }
 
 .loader {
-  width: 100px;
-  height: 100px;
+
+  width: 70px;
+  height: 70px;
   border: 5px solid #495867;
   border-bottom-color: transparent;
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
-  margin-top: 20vw;
-  margin-left: 40vw;
-  margin-right: 40vw;
-  margin-bottom: 40vw;
   animation: rotation 1s linear infinite;
+  margin-top: 40vw;
+  margin-left: 40vw;
+  margin-right: 20vw;
+  margin-bottom: 20vw;
 }
 
 @keyframes rotation {
@@ -80,4 +81,16 @@
   .posts-list {
     max-width: 60%;
   }
+}
+
+@media (min-width: 768px){
+  .loader{
+    margin-top: 20vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-bottom: 40vw;
+    width: 100px;
+    height: 100px;
+  }
+
 }
